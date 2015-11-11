@@ -2,8 +2,8 @@ class CreateStopTimes < ActiveRecord::Migration
   def change
     create_table :stop_times do |t|
       t.integer :trip_id
-      t.timestamp :arrival_time
-      t.timestamp :departure_time
+      t.string :arrival_time
+      t.string :departure_time
       t.integer :stop_id
       t.integer :stop_sequence
       t.string :stop_headsign

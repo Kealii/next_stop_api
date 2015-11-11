@@ -11,6 +11,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'figaro'
 gem 'simplecov'
 gem 'responders'
+gem 'active_model_serializers', github: 'rails-api/active_model_serializers'
 
 # gem 'therubyracer', platforms: :ruby
 # gem 'bcrypt', '~> 3.1.7'

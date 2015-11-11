@@ -31,8 +31,8 @@ ActiveRecord::Schema.define(version: 20151111194413) do
 
   create_table "stop_times", force: :cascade do |t|
     t.integer  "trip_id"
-    t.datetime "arrival_time"
-    t.datetime "departure_time"
+    t.string   "arrival_time"
+    t.string   "departure_time"
     t.integer  "stop_id"
     t.integer  "stop_sequence"
     t.string   "stop_headsign"
