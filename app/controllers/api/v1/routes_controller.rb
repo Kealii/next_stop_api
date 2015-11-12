@@ -1,6 +1,6 @@
 class Api::V1::RoutesController < ApplicationController
   def show
-    respond_with Route.find(params[:id])
+    respond_with Route.find_by(route_id: params[:route_id])
   end
 
   def index
