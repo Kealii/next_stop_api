@@ -8,6 +8,7 @@ class Api::V1::RoutesController < ApplicationController
   end
 
   private
+
   def find_params
     params.permit(:id,
                   :route_id,

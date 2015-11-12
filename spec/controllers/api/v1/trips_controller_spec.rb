@@ -1,12 +1,12 @@
 require 'rails_helper'
 
-RSpec.describe Api::V1::RoutesController, type: :controller do
+RSpec.describe Api::V1::TripsController, type: :controller do
 
-  let(:route1) { create(:route) }
+  let(:trip1) { create(:trip) }
 
   describe "GET #show" do
     it "returns http success" do
-      get :show, route_id: route1.route_id, format: :json
+      get :show, trip_id: trip1.id, format: :json
       expect(response).to have_http_status(:success)
     end
   end
