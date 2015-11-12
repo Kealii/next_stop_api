@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20151111194413) do
   enable_extension "plpgsql"
 
   create_table "routes", force: :cascade do |t|
-    t.integer  "route_id"
+    t.string   "route_id"
     t.string   "route_short_name"
     t.string   "route_long_name"
     t.string   "route_desc"
