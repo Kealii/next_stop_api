@@ -6,13 +6,4 @@ class Api::V1::StopsController < ApplicationController
   def index
     respond_with Stop.all
   end
-
-  private
-
-  def find_params
-    params.permit(:stop_id,
-                  :stop_name,
-                  :stop_desc,
-                  :stop_url)
-  end
 end

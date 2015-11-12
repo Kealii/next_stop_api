@@ -6,14 +6,4 @@ class Api::V1::TripsController < ApplicationController
   def index
     respond_with Trip.all
   end
-
-  private
-
-  def find_params
-    params.permit(:route_id,
-                  :service_id,
-                  :trip_id,
-                  :trip_headsign,
-                  :direction_id)
-  end
 end

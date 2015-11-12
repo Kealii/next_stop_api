@@ -6,7 +6,7 @@ RSpec.describe Api::V1::RoutesController, type: :controller do
 
   describe "GET #show" do
     it "returns http success" do
-      get :show, route_id: route1.route_id, format: :json
+      get :show, id: route1.route_id, format: :json
       expect(response).to have_http_status(:success)
     end
   end

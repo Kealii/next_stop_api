@@ -6,7 +6,7 @@ RSpec.describe Api::V1::TripsController, type: :controller do
 
   describe "GET #show" do
     it "returns http success" do
-      get :show, trip_id: trip1.id, format: :json
+      get :show, id: trip1.trip_id, format: :json
       expect(response).to have_http_status(:success)
     end
   end
