@@ -1,6 +1,6 @@
 class Api::V1::StopTimesController < ApplicationController
   def show
-    respond_with StopTime.find_by(trip_id: find_params[:trip_id])
+    respond_with StopTime.find_by(trip_id: params[:id])
   end
 
   def index
