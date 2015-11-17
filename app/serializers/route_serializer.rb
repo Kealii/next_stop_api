@@ -3,5 +3,12 @@ class RouteSerializer < ActiveModel::Serializer
              :route_short_name,
              :route_long_name,
              :route_desc,
-             :route_url
+             :route_url,
+             :stops
+
+  has_many :ordered_trips, key: :trips
+
+  def stops
+    object.stops.uniq
+  end
 end

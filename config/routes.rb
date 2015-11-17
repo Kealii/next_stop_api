@@ -8,6 +8,8 @@ Rails.application.routes.draw do
       resources :stop_times, only: [:show, :index]
       resources :stops,      only: [:show, :index]
       resources :trips,      only: [:show, :index]
+
+      get 'search', to: 'search#index'
     end
   end
 end

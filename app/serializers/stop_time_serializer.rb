@@ -4,5 +4,10 @@ class StopTimeSerializer < ActiveModel::Serializer
              :departure_time,
              :stop_id,
              :stop_sequence,
-             :stop_headsign
+             :stop_headsign,
+             :name
+
+  def name
+    object.stop.stop_name
+  end
 end

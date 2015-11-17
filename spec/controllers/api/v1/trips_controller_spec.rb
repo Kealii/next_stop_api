@@ -8,6 +8,10 @@ RSpec.describe Api::V1::TripsController, type: :controller do
     it "returns http success" do
       get :show, id: trip1.trip_id, format: :json
       expect(response).to have_http_status(:success)
+
+      trip = JSON.parse(response.body)
+      puts trip
+      expect(trip['stop_times']).to match_array([])
     end
   end
 

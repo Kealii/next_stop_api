@@ -4,4 +4,6 @@ class TripSerializer < ActiveModel::Serializer
              :trip_id,
              :trip_headsign,
              :direction_id
+
+  has_many :stop_times
 end
